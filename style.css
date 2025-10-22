@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #3A0B2D;
+    --secundary-color: #4A243B;
+}
+
+body {
+    background-color: var(--primary-color);
+    height: 100vh;
+    padding: 30px;
+    font-family: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.pesquisar {
+    background-color: #432544;
+    height: 116px;
+    width: 1521px;
+    border-radius: 3cap;
+    padding: 30px;
+    padding-left: 80px;
+    transform: translate(20%, 0);
+}
+
+.barra {
+    background-color: #5B3954;
+    height: 74.53px;
+    width: 841.47px;
+    border-radius: 3cap;
+    text-align: center;
+}
+
+.sino {
+    display: flex;
+    justify-content: right;
+    align-items: end;
+
+}
+
+.pesquisarNome {
+    text-align: center;
+    font-size: 30px;
+    color: #FFFFFF48;
+}
+
+.esquerda{
+    background-color: #4A243B;
+    height: 1014px;
+    width: 243px;
+    border-radius: 3cap;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(0, -11.5%);
+}

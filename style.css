@@ -5,21 +5,20 @@
 
 body {
     background-color: var(--primary-color);
-    height: 100vh;
+    height: 100%;
     padding: 30px;
     font-family: none;
     display: flex;
-    flex-direction: column;
 }
+
 
 .pesquisar {
     background-color: #432544;
     height: 116px;
     width: 1521px;
     border-radius: 3cap;
-    padding: 30px;
+    padding: 20px;
     padding-left: 80px;
-    transform: translate(20%, 0);
 }
 
 .barra {
@@ -30,25 +29,55 @@ body {
     text-align: center;
 }
 
-.sino {
-    display: flex;
-    justify-content: right;
-    align-items: end;
-
-}
-
 .pesquisarNome {
-    text-align: center;
     font-size: 30px;
     color: #FFFFFF48;
 }
 
-.esquerda{
+.esquerda {
     background-color: #4A243B;
     height: 1014px;
-    width: 243px;
+    width: 300px;
     border-radius: 3cap;
+    margin-right: 40px;
     flex-direction: column;
-    position: absolute;
-    transform: translate(0, -11.5%);
 }
+
+.meio {
+    height: 780px;
+    width: 1550px;
+    display: flex;
+}
+
+.homemaranha {
+    margin-top: 150px;
+    position: absolute;
+    display: flex;
+}
+
+.homemaranhaimg {
+    align-items: center;
+    border-radius: 3cap;
+    height: 600px;
+    width: 900px;
+}
+
+.imagens{
+    display: flex;
+    position: absolute;
+}
+
+p {
+    position: absolute;
+    font-size: 10px;
+    color: white;
+}
+
+.libary {
+    background-color: #432544;
+    height: 550px;
+    width: 550px;
+    margin: 10px;
+    border-radius: 3cap;
+}
+

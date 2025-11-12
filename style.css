@@ -6,11 +6,11 @@
 body {
     background-color: var(--primary-color);
     height: 100%;
+    width: 100%;
     padding: 30px;
     font-family: none;
     display: flex;
 }
-
 
 .pesquisar {
     background-color: #432544;
@@ -18,20 +18,90 @@ body {
     width: 1521px;
     border-radius: 3cap;
     padding: 20px;
-    padding-left: 80px;
+    gap: 20px;
+    display: flex;
+}
+
+.iconpesquisar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 220px;
+    padding: 30px;
 }
 
 .barra {
     background-color: #5B3954;
-    height: 74.53px;
-    width: 841.47px;
+    height: 75px;
+    width: 850px;
     border-radius: 3cap;
-    text-align: center;
+    display: flex;
+}
+
+.sino {
+    background-color: #543855;
+    height: 80px;
+    width: 80px;
+    border-radius: 30cap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil {
+    background-color: #543855;
+    height: 80px;
+    width: 400px;
+    border-radius: 3cap;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.subnome{
+    color: #FFFFFF48;
+    font-size: 20px;
+}
+
+.nome{
+    font-size: 25px;
+    color: white;
+    justify-content: center;
+}
+
+.textoperfil {
+    padding: 80px;
+}
+
+.iconperfil {
+    border-radius: 3cap;
+}
+
+.engrenagem {
+    background-color: #543855;
+    height: 80px;
+    width: 80px;
+    border-radius: 30cap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.engrenagem img {
+    height: 50px;
+    width: 50px;
 }
 
 .pesquisarNome {
+    line-height: 75px;
     font-size: 30px;
     color: #FFFFFF48;
+    justify-content: center;
+}
+
+.ladingpage {
+    height: 780px;
+    width: 1550px;
 }
 
 .esquerda {
@@ -40,44 +110,431 @@ body {
     width: 300px;
     border-radius: 3cap;
     margin-right: 40px;
-    flex-direction: column;
 }
 
-.meio {
-    height: 780px;
-    width: 1550px;
+.dash {
+    background-color: #4A152E;
+    margin-top: 10px;
+    border-radius: 3cap;
+    height: 80px;
+    width: 290px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 4px;
+}
+
+.mydash {
+    font-size: 30px;
+    color: white;
+}
+
+.icon {
+    padding-right: 10px;
+}
+
+.nomes p {
+    color: white;
+    margin: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.online p {
+    color: rgba(211, 211, 211, 0.493);
+    font-size: 25px;
+}
+
+.dashbaixo {
+    background-color: #4a152e;
+    border-radius: 3cap;
+    height: 80px;
+    width: 290px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 4px;
+}
+
+.mydashbaixo {
+    font-size: 30px;
+    color: white;
+}
+
+.container {
+    margin-top: 10px;
     display: flex;
 }
 
 .homemaranha {
-    margin-top: 150px;
-    position: absolute;
-    display: flex;
-}
-
-.homemaranhaimg {
     align-items: center;
     border-radius: 3cap;
-    height: 600px;
-    width: 900px;
+    height: 609px;
+    width: 902px;
+    background: url(./img/div_main/Homem\ aranha\ 1.png);
 }
 
-.imagens{
+.raio {
+    height: 71.4px;
+    width: 241px;
+    margin: 3%;
+    background-color: #82708e70;
+    border-radius: 3cap;
+    justify-content: center;
+    align-items: center;
     display: flex;
-    position: absolute;
+    gap: 20px;
 }
 
-p {
-    position: absolute;
-    font-size: 10px;
+.raio img {
+    background-color: #ffcd45b7;
+    border-radius: 3cap;
+}
+
+.raio p {
+    font-size: 30px;
+    color: white;
+}
+
+.titulo {
+    text-align: start;
+    font-size: 40px;
+    color: white;
+    justify-content: flex-start;
+    display: flex;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.subtitulo {
+    font-size: 25px;
+    color: white;
+    text-align: start;
+    justify-content: start;
+    display: flex;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.book {
+    background-color: #ff000059;
+    height: 82.61px;
+    width: 274.61px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 3cap;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.book p {
+    font-size: 30px;
+    color: white;
+}
+
+.setas {
+    height: 60px;
+    width: 60px;
+    margin-top: 70px;
+    margin-left: 40px;
+    display: flex;
+    gap: 150px;
+}
+
+.carregando {
+    height: 60px;
+    width: 60px;
+    margin-left: 280px;
+    gap: 20px;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
     color: white;
 }
 
 .libary {
-    background-color: #432544;
+    background-color: #3D0B25;
     height: 550px;
     width: 550px;
+    border-radius: 5cap;
+    margin-left: 60px;
+    border: 8px solid #461C3B;
+    border-bottom-color: 2px solid #ccc;
+}
+
+.titulolibary p {
+    color: white;
+    font-size: 40px;
+    margin-top: 10px;
+
+}
+
+.libary p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulococ {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.setavermelha {
+    margin-left: 150px;
+}
+
+.setacinzanfs {
+    margin-left: 205px;
+}
+
+.setacinzagot {
+    margin-left: 186px;
+}
+
+.setacinzaover {
+    margin-left: 208px;
+}
+
+.imglibary {
+    height: 75px;
+    width: 75px;
+}
+
+.descricaococ {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.descricaococ0 {
+    font-size: 20px;
+    height: 32px;
+    width: 97px;
+    background-color: #52254A;
+    border-radius: 10cap;
+}
+
+.descricaococ1 {
+    font-size: 20px;
+    height: 32px;
+    width: 136px;
+    background-color: #52254A;
+    border-radius: 10cap;
+}
+
+.coc {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    gap: 15px;
+}
+
+.nfs {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    gap: 15px;
+}
+
+.titulonfs {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.descricaonfs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.descricaonfs0 {
+    font-size: 20px;
+    height: 33px;
+    width: 75px;
+    background-color: #52254A;
+    border-radius: 10cap;
+}
+
+.descricaonfs1 {
+    font-size: 20px;
+    height: 33px;
+    width: 52px;
+    background-color: #52254A;
+    border-radius: 10cap;
+}
+
+.got {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    gap: 15px;
+}
+
+.titulogot {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.descricaogot {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.descricaogot0 {
+    font-size: 20px;
+    height: 33px;
+    width: 92px;
+    background-color: #52254A;
+    border-radius: 10cap;
+    text-align: center;
+}
+
+.descricaogot1 {
+    font-size: 20px;
+    height: 33px;
+    width: 120px;
+    background-color: #52254A;
+    border-radius: 10cap;
+    text-align: center;
+}
+
+.over {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.tituloover {
+    margin-bottom: 10px;
+    display: flex;
+    margin-left: 15px;
+}
+
+.descricaoover {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.descricaoover0 {
+    font-size: 20px;
+    height: 33px;
+    width: 97px;
+    background-color: #52254A;
+    border-radius: 10cap;
+    text-align: center;
+}
+
+.descricaoover1 {
+    font-size: 20px;
+    height: 33px;
+    width: 89px;
+    background-color: #52254A;
+    border-radius: 10cap;
+    text-align: center;
+}
+
+.line {
+    margin-top: 15px;
+}
+
+.setasabaixodalibary {
+    height: 100px;
+    width: 200px;
+    margin-left: 100px;
+    transform: translate(1350px, -106px);
+}
+
+.setabaixovermelha {
+    margin-left: 100px;
+    transform: translate(1200px, -50px);
+}
+
+.imagens {
+    display: flex;
+    gap: 40px;
+}
+
+.iconimg {
     margin: 10px;
+
+}
+
+.apex {
+    height: 230px;
+    width: 350px;
+    background: url(./img/div_main/sddefault\ 1.png);
     border-radius: 3cap;
 }
 
+.apex p {
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+.players {
+    height: 45px;
+    width: 205px;
+    margin: 3%;
+    background-color: #303A4946;
+    border-radius: 3cap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.overwatch {
+    height: 230px;
+    width: 350px;
+    background: url(./img/div_main/download\ 1.png);
+    border-radius: 3cap;
+}
+
+.overwatch p {
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+.marvel {
+    height: 230px;
+    width: 350px;
+    background: url(./img/div_main/thumb-350-1386761\ 1.png);
+    border-radius: 3cap;
+}
+
+.marvel p {
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+.streetfighter {
+    height: 230px;
+    width: 350px;
+    background: url(./img/div_main/ryu-street-fighter-4s-1280x2120\ 1.png);
+    border-radius: 3cap;
+}
+
+.streetfighter p {
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 100px;
+}

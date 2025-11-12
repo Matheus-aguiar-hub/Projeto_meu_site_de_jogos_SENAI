@@ -7,7 +7,7 @@ body {
     background-color: var(--primary-color);
     height: 100%;
     width: 100%;
-    padding: 30px;
+    padding: 0px;
     font-family: none;
     display: flex;
 }
@@ -58,12 +58,12 @@ body {
     padding: 20px;
 }
 
-.subnome{
+.subnome {
     color: #FFFFFF48;
     font-size: 20px;
 }
 
-.nome{
+.nome {
     font-size: 25px;
     color: white;
     justify-content: center;
@@ -261,6 +261,7 @@ body {
     margin-left: 60px;
     border: 8px solid #461C3B;
     border-bottom-color: 2px solid #ccc;
+
 }
 
 .titulolibary p {
@@ -539,3 +540,246 @@ body {
     margin-top: 100px;
 }
 
+footer {
+    display: flex;
+    background-color: #4A152E;
+    color: white;
+    margin-top: 40px;
+    border-radius: 1cap;
+    height: 69px;
+    width: 768px;
+}
+
+.imgfooter {
+    display: flex;
+    margin-left: 10px;
+    gap: 10px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgfooter img {
+    background-color: #54375B;
+    border-radius: 1cap;
+    height: 30px;
+    width: 30px;
+}
+
+.logout {
+    display: flex;
+    margin-left: 80px;
+    margin-right: 80px;
+    gap: 10px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+ 
+    background-color: #3C1123;
+    width: 200px;
+    border-radius: 3cap;
+}
+
+.pequenasimagens{
+    gap: 10px;
+    display: flex;
+}
+
+.caixa, .amigos, .cartao{
+    background-color: #54375B;
+    height: 50px;
+    margin-top: 7px;
+    border-radius: 3cap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.caixa img, .amigos img, .cartao img{
+    height: 50px;
+    width: 50px;
+    border-radius: 3cap;
+
+    display: flex;
+}
+
+@media screen and (min-width: 769px) {
+    footer {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .ladingpage {
+        width: 768px;
+        height: 730px;
+    }
+
+    .nfs,
+    .got,
+    .over,
+    .line,
+    .esquerda,
+    .overwatch,
+    .marvel,
+    .setabaixovermelha,
+    .setasabaixodalibary,
+    .textoperfil,
+    .setavermelha {
+        display: none;
+    }
+
+    .pesquisar {
+        width: 768px;
+        height: 100px;
+    }
+
+    .barra {
+        width: 336px;
+        height: 62px;
+    }
+
+    .engrenagem {
+        width: 68px;
+        height: 68px;
+    }
+
+    .sino {
+        width: 68px;
+        height: 68px;
+    }
+
+    .perfil {
+        width: 120px;
+        height: 68px;
+    }
+
+    .iconperfil {
+        width: 45px;
+        height: 45;
+    }
+
+    .descricaococ0,
+    .descricaococ1 {
+        width: 200px;
+        height: 51px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+    }
+
+    .titulococ {
+        font-size: 35px;
+    }
+
+    .imglibary {
+        width: 100%;
+        height: 100px;
+        border-radius: 3cap;
+    }
+
+    .iconpesquisar {
+        margin-right: 60px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 60px;
+        width: 0px;
+    }
+
+    .pesquisarNome {
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .libary {
+        transform: translate(-50px, 0px);
+        height: 220px;
+        width: 700px;
+        margin-left: 85px;
+        position: absolute;
+    }
+
+    .homemaranha {
+        transform: translate();
+        height: 325px;
+        width: 700px;
+        margin-left: 20px;
+        transform: translate(20px, 250px);
+    }
+
+    .raio {
+        height: 17px;
+        width: 103px;
+        margin-left: 50px;
+    }
+
+    .raio img {
+        height: 12px;
+        width: 12px;
+    }
+
+    .raio p {
+        font-size: 11px;
+    }
+
+    .titulo {
+        font-size: 30px;
+        margin-top: 0px;
+    }
+
+    .subtitulo {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .book {
+        height: 36px;
+        width: 105px;
+        margin-left: 60px;
+    }
+
+    .book p {
+        font-size: 10px;
+    }
+
+    .setas {
+        height: 31px;
+        width: 31px;
+        margin-top: 15px;
+    }
+
+    .carregando {
+        margin-left: 120px;
+        align-items: start;
+        justify-content: start;
+
+    }
+
+    .carregando img {
+        height: 42px;
+        width: 42px;
+    }
+
+    .carregando p {
+        font-size: 24px;
+    }
+
+    .apex,
+    .streetfighter {
+        margin-left: 40px;
+        height: 200px;
+        width: 310px;
+    }
+
+    .apex p,
+    .streetfighter p {
+        font-size: 30px;
+        margin-top: 70px;
+    }
+}

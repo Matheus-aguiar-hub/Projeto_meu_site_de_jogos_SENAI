@@ -1,24 +1,28 @@
 :root {
-    --primary-color: #3A0B2D;
+
     --secundary-color: #4A243B;
 }
 
 body {
-    background-color: var(--primary-color);
-    height: 100%;
-    width: 100%;
-    padding: 0px;
+    background-color: #3A0B2D;
+    max-height: 100%;
+    max-width: 100%;
+    padding-left: clamp(1rem, 2vw, 1rem);
+    padding-right: clamp(1rem, 2vw, 1rem);
+    padding-top: 1rem;
     font-family: none;
     display: flex;
 }
 
+/*Barra de pesquisa*/
 .pesquisar {
     background-color: #432544;
-    height: 116px;
-    width: 1521px;
+    max-height: 100px;
+    min-height: 10px;
+    max-width: 100%;
     border-radius: 3cap;
-    padding: 20px;
-    gap: 20px;
+    padding: clamp(0.5rem, 5vw, 1rem);
+    gap: clamp(0.5rem, 5vw, 1rem);
     display: flex;
 }
 
@@ -26,61 +30,43 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 220px;
-    padding: 30px;
+    padding: clamp(0.5rem, 5vw, 1rem);
 }
 
 .barra {
     background-color: #5B3954;
-    height: 75px;
-    width: 850px;
+    max-height: 100px;
+    min-height: 10px;
+    min-width: 70%;
     border-radius: 3cap;
     display: flex;
 }
 
 .sino {
     background-color: #543855;
-    height: 80px;
-    width: 80px;
+    max-height: 100vh;
+    max-width: 100vw;
+    min-height: 3vh;
+    min-width: 3vw;
     border-radius: 30cap;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.perfil {
-    background-color: #543855;
-    height: 80px;
-    width: 400px;
-    border-radius: 3cap;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-
-.subnome {
-    color: #FFFFFF48;
-    font-size: 20px;
-}
-
-.nome {
-    font-size: 25px;
-    color: white;
-    justify-content: center;
-}
-
-.textoperfil {
-    padding: 80px;
-}
-
-.iconperfil {
-    border-radius: 3cap;
+.sino img {
+    max-height: 5vh;
+    min-height: 5vh;
+    max-width: 3vw;
+    min-width: 3vw;
 }
 
 .engrenagem {
     background-color: #543855;
-    height: 80px;
-    width: 80px;
+    max-height: 100vh;
+    max-width: 100vw;
+    min-height: 3vh;
+    min-width: 3vw;
     border-radius: 30cap;
     display: flex;
     align-items: center;
@@ -88,187 +74,275 @@ body {
 }
 
 .engrenagem img {
-    height: 50px;
-    width: 50px;
+    max-height: 5vh;
+    min-height: 5vh;
+    max-width: 3vw;
+    min-width: 3vw;
+}
+
+.perfil {
+    background-color: #543855;
+    max-height: 100vh;
+    max-width: 100vw;
+    min-height: 5vh;
+    min-width: 5vw;
+    border-radius: 3cap;
+    display: flex;
+    align-items: center;
+    padding: clamp(0.1rem, 0.5vw, 0rem);
+}
+
+.perfil img {
+    max-height: 5vh;
+    min-height: 5vh;
+    max-width: 3vw;
+    min-width: 3vw;
+}
+
+.subnome {
+    color: #FFFFFF48;
+    font-size: clamp(1rem, 0.1vw, 2rem);
+}
+
+.nome {
+    font-size: clamp(1rem, 1vw, 1rem);
+    color: white;
+}
+
+.textoperfil {
+    padding: clamp(0rem, 1vw, 1rem);
+}
+
+.iconperfil {
+    border-radius: 3cap;
 }
 
 .pesquisarNome {
-    line-height: 75px;
-    font-size: 30px;
+    line-height: 7vh;
+    font-size: clamp(0.5rem, 2.5vw, 2rem);
     color: #FFFFFF48;
     justify-content: center;
 }
 
+/*Barra de pesquisa*/
+/*página central*/
 .ladingpage {
-    height: 780px;
-    width: 1550px;
+    max-height: 70vh;
+    min-height: 70vh;
+    max-width: 80vw;
+    min-width: 80vw;
 }
 
+/*página central*/
+/*Coluna de amizades*/
 .esquerda {
     background-color: #4A243B;
-    height: 1014px;
-    width: 300px;
+    max-height: 96vh;
+    min-height: 96vh;
+    max-width: 15vw;
+    min-width: 15vw;
     border-radius: 3cap;
-    margin-right: 40px;
+    margin-right: clamp(0.5rem, 2.5vw, 4rem);
 }
 
 .dash {
     background-color: #4A152E;
-    margin-top: 10px;
+    margin-top: 2rem;
     border-radius: 3cap;
-    height: 80px;
-    width: 290px;
+    max-height: 8vh;
+    min-height: 8vh;
+    max-width: 12.5vw;
+    min-width: 12.5vw;
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-left: 4px;
+    margin-left: clamp(0.25rem, 1vw, 1rem);
 }
 
 .mydash {
-    font-size: 30px;
+    font-size: clamp(0.5rem, 1vw, 2rem);
     color: white;
 }
 
 .icon {
-    padding-right: 10px;
+    padding: clamp(0.5rem, 1vw, 1rem);
+    max-height: 8vh;
+    max-width: 8vw;
+    min-height: 2vh;
+    min-width: 2vw;
 }
 
 .nomes p {
-    color: white;
-    margin: 38px;
+    color: rgb(255, 255, 255);
+    margin-left: clamp(0.25rem, 1vw, 1rem);
+    font-size: clamp(0.5rem, 1vw, 0.8rem);
     display: flex;
     align-items: center;
 }
 
 .online p {
     color: rgba(211, 211, 211, 0.493);
-    font-size: 25px;
+    font-size: clamp(0.5rem, 1vw, 1rem);
+    margin-left: clamp(2rem, 1vw, 2rem);
+    padding: clamp(0.5rem, 1vw, 0.5rem);
 }
 
 .dashbaixo {
     background-color: #4a152e;
     border-radius: 3cap;
-    height: 80px;
-    width: 290px;
+    max-height: 8vh;
+    min-height: 8vh;
+    max-width: 12.5vw;
+    min-width: 12.5vw;
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-left: 4px;
+    margin-left: clamp(0.25rem, 1vw, 1rem);
 }
 
 .mydashbaixo {
-    font-size: 30px;
+    font-size: clamp(0.5rem, 1vw, 2rem);
     color: white;
 }
 
 .container {
-    margin-top: 10px;
+    margin-top: 2rem;
     display: flex;
 }
 
+/*Coluna de amizades*/
+/*main*/
 .homemaranha {
     align-items: center;
     border-radius: 3cap;
-    height: 609px;
-    width: 902px;
-    background: url(./img/div_main/Homem\ aranha\ 1.png);
+    max-height: 50vh;
+    min-height: 40vh;
+    max-width: 40vw;
+    min-width: 40vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.507);
+    background-image: url(./img/div_main/Homem\ aranha\ 1.png);
+
 }
 
 .raio {
-    height: 71.4px;
-    width: 241px;
-    margin: 3%;
+    max-height: 5vh;
+    min-height: 5vh;
+    max-width: 10vw;
+    min-width: 10vw;
+    margin: clamp(0.5rem, 1vw, 1rem);
     background-color: #82708e70;
     border-radius: 3cap;
     justify-content: center;
     align-items: center;
     display: flex;
-    gap: 20px;
+    gap: clamp(0.5rem, 1vw, 2rem);
 }
 
 .raio img {
     background-color: #ffcd45b7;
     border-radius: 3cap;
+    max-height: 4vh;
+    min-height: 1vh;
+    max-width: 2vw;
+    min-width: 2vw;
 }
 
 .raio p {
-    font-size: 30px;
+    font-size: clamp(0.5rem, 1vw, 2rem);
     color: white;
 }
 
 .titulo {
     text-align: start;
-    font-size: 40px;
+    font-size: clamp(1.2rem, 2.5vw, 5rem);
     color: white;
     justify-content: flex-start;
     display: flex;
-    margin-left: 40px;
-    margin-top: 30px;
+    margin-top: clamp(0.5rem, 1vw, 2rem);
+    margin-left: clamp(3rem, 1vw, 3rem);
 }
 
 .subtitulo {
-    font-size: 25px;
+    font-size: clamp(0.8rem, 1vw, 2rem);
     color: white;
     text-align: start;
     justify-content: start;
     display: flex;
-    margin-left: 40px;
-    margin-top: 30px;
+    margin-top: clamp(0.5rem, 1vw, 2rem);
+    margin-left: clamp(3rem, 1vw, 3rem);
 }
 
 .book {
     background-color: #ff000059;
-    height: 82.61px;
-    width: 274.61px;
+    max-height: 8vh;
+    max-width: 15vw;
+    min-height: 5vh;
+    min-width: 10vw;
     justify-content: center;
     align-items: center;
     display: flex;
     border-radius: 3cap;
-    margin-left: 40px;
-    margin-top: 20px;
+    margin-top: clamp(0.5rem, 1vw, 2rem);
+    margin-left: clamp(3rem, 1vw, 3rem);
 }
 
 .book p {
-    font-size: 30px;
+    font-size: clamp(1rem, 1vw, 2rem);
     color: white;
 }
 
 .setas {
-    height: 60px;
-    width: 60px;
-    margin-top: 70px;
-    margin-left: 40px;
+    max-height: 5vh;
+    min-height: 5vh;
+    max-width: 3vw;
+    min-width: 3vw;
     display: flex;
-    gap: 150px;
+    margin-top: clamp(1rem, 2vw, 1rem);
+    margin-left: clamp(2rem, 20vw, 4rem);
+    gap: clamp(0.5rem, 7vw, 7rem);
+}
+
+.setadirecionadaparadireira {
+    transform: rotate(180deg);
+    margin-bottom: clamp(0.15rem, 0.15vw, 0.15rem);
 }
 
 .carregando {
-    height: 60px;
-    width: 60px;
-    margin-left: 280px;
-    gap: 20px;
     align-items: center;
     display: flex;
-    font-size: 30px;
+    gap: clamp(0.25rem, 1vw, 1rem);
+    font-size: clamp(1rem, 1vw, 2rem);
     color: white;
 }
 
+.carregando img {
+    max-height: 3vh;
+    min-height: 3vh;
+    max-width: 5vw;
+    min-width: 3vw;
+}
+
+/*biblioteca de livros*/
 .libary {
     background-color: #3D0B25;
-    height: 550px;
-    width: 550px;
+    max-height: 47vh;
+    min-height: 47vh;
+    max-width: 30vw;
+    min-width: 30vw;
     border-radius: 5cap;
-    margin-left: 60px;
-    border: 8px solid #461C3B;
+    margin-left: clamp(1rem, 6vw, 6rem);
+    border: 0.5rem solid #461C3B;
     border-bottom-color: 2px solid #ccc;
-
+    box-shadow: 0 0 20px rgb(117, 10, 121)
 }
 
 .titulolibary p {
     color: white;
-    font-size: 40px;
-    margin-top: 10px;
-
+    font-size: clamp(0.01rem, 2vw, 2rem);
+    margin-top: clamp(0.1rem, 1vw, 1rem);
 }
 
 .libary p {
@@ -279,282 +353,290 @@ body {
 }
 
 .titulococ {
-    margin-bottom: 10px;
     display: flex;
 }
 
-.setavermelha {
-    margin-left: 150px;
-}
-
-.setacinzanfs {
-    margin-left: 205px;
-}
-
-.setacinzagot {
-    margin-left: 186px;
-}
-
-.setacinzaover {
-    margin-left: 208px;
-}
-
 .imglibary {
-    height: 75px;
-    width: 75px;
+    max-height: 5vh;
+    min-height: 5vh;
+    max-width: 3vw;
+    min-width: 3vw;
 }
 
 .descricaococ {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: clamp(3rem, 3vw, 3rem);
+    margin-top: clamp(0.5rem, 1vw, 0.5rem);
 }
 
 .descricaococ0 {
-    font-size: 20px;
-    height: 32px;
-    width: 97px;
+    font-size: clamp(1rem, 2vw, 1rem);
+    max-height: 3vh;
+    min-height: 3vh;
+    max-width: 6vw;
+    min-width: 6vw;
     background-color: #52254A;
     border-radius: 10cap;
 }
 
 .descricaococ1 {
-    font-size: 20px;
-    height: 32px;
-    width: 136px;
+    font-size: clamp(1rem, 2vw, 1rem);
+    max-height: 3vh;
+    min-height: 3vh;
+    max-width: 6vw;
+    min-width: 6vw;
     background-color: #52254A;
     border-radius: 10cap;
 }
 
 .coc {
     display: flex;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-size: 20px;
-    gap: 15px;
+    margin-left: 1rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    gap: clamp(1rem, 2vw, 2rem);
 }
 
 .nfs {
     display: flex;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-size: 20px;
-    gap: 15px;
+    margin-left: 1rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    gap: clamp(1rem, 2vw, 2rem);
 }
 
 .titulonfs {
-    margin-bottom: 10px;
     display: flex;
 }
 
 .descricaonfs {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: clamp(3rem, 3vw, 3rem);
+    margin-top: clamp(0.5rem, 1vw, 0.5rem);
 }
 
 .descricaonfs0 {
-    font-size: 20px;
-    height: 33px;
-    width: 75px;
+    font-size: clamp(1rem, 2vw, 1rem);
+    max-height: 3vh;
+    min-height: 3vh;
+    max-width: 5vw;
+    min-width: 5vw;
     background-color: #52254A;
     border-radius: 10cap;
 }
 
 .descricaonfs1 {
-    font-size: 20px;
-    height: 33px;
-    width: 52px;
+    font-size: clamp(1rem, 2vw, 1rem);
+    max-height: 3vh;
+    min-height: 3vh;
+    max-width: 4vw;
+    min-width: 4vw;
     background-color: #52254A;
     border-radius: 10cap;
 }
 
 .got {
     display: flex;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-size: 20px;
-    gap: 15px;
+    margin-left: 1rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    gap: clamp(1rem, 2vw, 2rem);
 }
 
 .titulogot {
-    margin-bottom: 10px;
     display: flex;
 }
 
 .descricaogot {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: clamp(3rem, 3vw, 3rem);
+    margin-top: clamp(0.5rem, 1vw, 0.5rem);
 }
 
 .descricaogot0 {
-    font-size: 20px;
-    height: 33px;
-    width: 92px;
+    font-size: clamp(1rem, 2vw, 1rem);
+    max-height: 3vh;
+    min-height: 3vh;
+    max-width: 6vw;
+    min-width: 6vw;
     background-color: #52254A;
     border-radius: 10cap;
-    text-align: center;
 }
 
 .descricaogot1 {
-    font-size: 20px;
-    height: 33px;
-    width: 120px;
+    font-size: clamp(1rem, 2vw, 1rem);
+    max-height: 3vh;
+    min-height: 3vh;
+    max-width: 6vw;
+    min-width: 6vw;
     background-color: #52254A;
     border-radius: 10cap;
-    text-align: center;
 }
 
 .over {
     display: flex;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-size: 20px;
+    margin-left: 1rem;
+    font-size: clamp(1.2rem, 2vw, 1.2rem);
+    gap: clamp(2rem, 2vw, 2rem);
 }
 
 .tituloover {
-    margin-bottom: 10px;
     display: flex;
-    margin-left: 15px;
 }
 
 .descricaoover {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-left: 15px;
+    gap: clamp(3rem, 3vw, 3rem);
+    margin-top: clamp(0.5rem, 1vw, 0.5rem);
 }
 
 .descricaoover0 {
-    font-size: 20px;
-    height: 33px;
-    width: 97px;
+    font-size: clamp(1rem, 2vw, 1rem);
+    max-height: 3vh;
+    min-height: 3vh;
+    max-width: 5vw;
+    min-width: 5vw;
     background-color: #52254A;
     border-radius: 10cap;
-    text-align: center;
 }
 
 .descricaoover1 {
-    font-size: 20px;
-    height: 33px;
-    width: 89px;
+    font-size: clamp(1rem, 2vw, 1rem);
+    max-height: 3vh;
+    min-height: 3vh;
+    max-width: 5vw;
+    min-width: 5vw;
     background-color: #52254A;
     border-radius: 10cap;
-    text-align: center;
 }
 
 .line {
-    margin-top: 15px;
+    max-height: 0.1vh;
+    min-height: 0.1vh;
+    max-width: 20vw;
+    min-width: 20vw;
+    margin-top: clamp(1.5em, 3vw, 1.5rem);
+    margin-bottom: clamp(0.5rem, 3vw, 0.5rem);
+    margin-left: clamp(3rem, 3vw, 3rem);
 }
 
 .setasabaixodalibary {
-    height: 100px;
-    width: 200px;
-    margin-left: 100px;
-    transform: translate(1350px, -106px);
+    max-height: 5vh;
+    min-height: 5vh;
+    max-width: 3vw;
+    min-width: 3vw;
+    display: flex;
+    margin-top: clamp(0.75rem, 0.5vw, 0.75rem);
+    margin-left: clamp(2rem, 20vw, 4rem);
+    gap: clamp(0.5rem, 7vw, 7rem);
 }
 
-.setabaixovermelha {
-    margin-left: 100px;
-    transform: translate(1200px, -50px);
-}
-
+/*biblioteca de livros*/
+/*Imagens*/
 .imagens {
     display: flex;
-    gap: 40px;
-}
-
-.iconimg {
-    margin: 10px;
-
+    gap: clamp(1rem, 5vw, 7.5rem);
 }
 
 .apex {
-    height: 230px;
-    width: 350px;
-    background: url(./img/div_main/sddefault\ 1.png);
+    max-height: 25vh;
+    min-height: 25vh;
+    max-width: 15vw;
+    min-width: 15vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 40px rgb(129, 14, 175);
+    background-image: url(./img/div_main/sddefault\ 1.png);
     border-radius: 3cap;
 }
 
-.apex p {
+.apex p,
+.overwatch p,
+.marvel p {
     color: white;
-    font-size: 30px;
-    margin-left: 20px;
-    margin-top: 100px;
+    font-size: clamp(1rem, 1vw, 2rem);
+    margin-left: clamp(1rem, 3vw, 1rem);
+    margin-top: clamp(5rem, 3vw, 10rem);
+}
+
+.streetfighter p {
+    color: white;
+    font-size: clamp(1rem, 1vw, 2rem);
+    margin-left: clamp(1rem, 3vw, 1rem);
+    margin-top: clamp(3rem, 4vw, 4rem);
 }
 
 .players {
-    height: 45px;
-    width: 205px;
-    margin: 3%;
+    margin: clamp(1rem, 3vw, 1rem);
     background-color: #303A4946;
     border-radius: 3cap;
     justify-content: center;
     align-items: center;
     display: flex;
-    gap: 20px;
-    font-size: 20px;
+    gap: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(1rem, 3vw, 1rem);
     color: white;
 }
 
 .overwatch {
-    height: 230px;
-    width: 350px;
-    background: url(./img/div_main/download\ 1.png);
+    max-height: 25vh;
+    min-height: 25vh;
+    max-width: 15vw;
+    min-width: 15vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 40px rgb(94, 131, 255);
+    background-image: url(./img/div_main/download\ 1.png);
     border-radius: 3cap;
-}
-
-.overwatch p {
-    color: white;
-    font-size: 30px;
-    margin-left: 20px;
-    margin-top: 100px;
 }
 
 .marvel {
-    height: 230px;
-    width: 350px;
-    background: url(./img/div_main/thumb-350-1386761\ 1.png);
+    max-height: 25vh;
+    min-height: 25vh;
+    max-width: 15vw;
+    min-width: 15vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 40px rgb(94, 131, 255);
+    background-image: url(./img/div_main/thumb-350-1386761\ 1.png);
     border-radius: 3cap;
-}
-
-.marvel p {
-    color: white;
-    font-size: 30px;
-    margin-left: 20px;
-    margin-top: 100px;
 }
 
 .streetfighter {
-    height: 230px;
-    width: 350px;
-    background: url(./img/div_main/ryu-street-fighter-4s-1280x2120\ 1.png);
+    max-height: 25vh;
+    min-height: 25vh;
+    max-width: 15vw;
+    min-width: 15vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 40px rgb(153, 171, 229);
+    background-image: url(./img/div_main/ryu-street-fighter-4s-1280x2120\ 1.png);
     border-radius: 3cap;
 }
 
-.streetfighter p {
-    color: white;
-    font-size: 30px;
-    margin-left: 20px;
-    margin-top: 100px;
-}
-
+/*footer*/
 footer {
+    max-height: 2vh;
+    min-height: 5vh;
+    max-width: 95vw;
+    min-width: 95vw;
     display: flex;
     background-color: #4A152E;
     color: white;
-    margin-top: 40px;
+    margin-top: clamp(1rem, 3vw, 1rem);
     border-radius: 1cap;
-    height: 69px;
-    width: 768px;
 }
 
 .imgfooter {
     display: flex;
-    margin-left: 10px;
-    gap: 10px;
-    font-size: 20px;
+    margin-left: clamp(1rem, 3vw, 1rem);
+    gap: clamp(1rem, 3vw, 1rem);
+    font-size: clamp(1rem, 3vw, 1rem);
     justify-content: center;
     align-items: center;
 }
@@ -562,49 +644,90 @@ footer {
 .imgfooter img {
     background-color: #54375B;
     border-radius: 1cap;
-    height: 30px;
-    width: 30px;
+    max-height: 3vh;
+    min-height: 3vh;
+    max-width: 3vw;
+    min-width: 3vw;
 }
 
 .logout {
+    max-height: 4vh;
+    min-height: 4vh;
+    max-width: 30vw;
+    min-width: 30vw;
+    margin-top: clamp(0.2rem, 3vw, 0.2rem);
+    margin-left: clamp(0.1rem, 10vw, 5rem);
+    margin-right: clamp(0.1rem, 10vw, 5rem);
+    gap: clamp(0.1rem, 3vw, 1rem);
+    font-size: clamp(1rem, 3vw, 1rem);
     display: flex;
-    margin-left: 80px;
-    margin-right: 80px;
-    gap: 10px;
-    font-size: 20px;
     justify-content: center;
     align-items: center;
- 
     background-color: #3C1123;
-    width: 200px;
     border-radius: 3cap;
 }
 
-.pequenasimagens{
-    gap: 10px;
+.logout img {
+    max-height: 3vh;
+    min-height: 3vh;
+    max-width: 3vw;
+    min-width: 3vw;
+}
+
+.pequenasimagens {
+    gap: clamp(0.1rem, 3vw, 1rem);
     display: flex;
 }
 
-.caixa, .amigos, .cartao{
+.caixa,
+.amigos,
+.cartao {
     background-color: #54375B;
-    height: 50px;
-    margin-top: 7px;
+    max-height: 4vh;
+    min-height: 4vh;
+    max-width: 5vw;
+    min-width: 5vw;
+    margin-top: clamp(0.1rem, 3vw, 0.2rem);
     border-radius: 3cap;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
-.caixa img, .amigos img, .cartao img{
-    height: 50px;
-    width: 50px;
+.caixa img,
+.amigos img,
+.cartao img {
+    max-height: 3vh;
+    min-height: 3vh;
+    max-width: 3vw;
+    min-width: 3vw;
     border-radius: 3cap;
-
     display: flex;
 }
 
+h1{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: clamp(20rem, 20vw, 20rem);
+}
+
+/*footer*/
 @media screen and (min-width: 769px) {
     footer {
+        display: none;
+    }
+}
+
+@media (max-width: 1188px) {
+    .textoperfil{
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .carregando{
         display: none;
     }
 }
@@ -612,8 +735,10 @@ footer {
 @media (max-width: 768px) {
 
     .ladingpage {
-        width: 768px;
-        height: 730px;
+        max-height: 70vh;
+        min-height: 70vh;
+        max-width: 80vw;
+        min-width: 80vw;
     }
 
     .nfs,
@@ -631,155 +756,402 @@ footer {
     }
 
     .pesquisar {
-        width: 768px;
-        height: 100px;
+        max-height: 11vh;
+        min-height: 11vh;
+        max-width: 93vw;
+        min-width: 93vw;
+    }
+
+    .pesquisarNome {
+        font-size: clamp(0.5rem, 2vw, 1.5rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .barra {
-        width: 336px;
-        height: 62px;
+        max-height: 7vh;
+        min-height: 6vh;
+        max-width: 9vw;
+        min-width: 50vw;
     }
 
     .engrenagem {
-        width: 68px;
-        height: 68px;
+        max-height: 7vh;
+        min-height: 6vh;
+        max-width: 9vw;
+        min-width: 9vw;
     }
 
     .sino {
-        width: 68px;
-        height: 68px;
+        max-height: 7vh;
+        min-height: 6vh;
+        max-width: 9vw;
+        min-width: 9vw;
     }
 
     .perfil {
-        width: 120px;
-        height: 68px;
+        max-height: 7vh;
+        min-height: 6vh;
+        max-width: 9vw;
+        min-width: 9vw;
     }
 
     .iconperfil {
-        width: 45px;
-        height: 45;
+        margin-left: clamp(0.1rem, 1vw, 0.5rem);
+    }
+
+    .libary {
+        max-height: 18vh;
+        min-height: 18vh;
+        max-width: 85vw;
+        min-width: 85vw;
+        margin-left: clamp(2rem, 5vw, 5rem);
+        position: absolute;
+    }
+
+    .titulococ {
+        font-size: clamp(1.5rem, 5vw, 2.2rem);
+    }
+
+    .descricaococ {
+        margin-left: clamp(2rem, 5vw, 5rem);
     }
 
     .descricaococ0,
     .descricaococ1 {
-        width: 200px;
-        height: 51px;
+        max-height: 5vh;
+        min-height: 5vh;
+        max-width: 20vw;
+        min-width: 20vw;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 35px;
-    }
-
-    .titulococ {
-        font-size: 35px;
+        font-size: clamp(0.5rem, 2vw, 1.5rem);
     }
 
     .imglibary {
-        width: 100%;
-        height: 100px;
+        max-height: 12vh;
+        min-height: 12vh;
+        max-width: 15vw;
+        min-width: 15vw;
         border-radius: 3cap;
     }
 
     .iconpesquisar {
-        margin-right: 60px;
-        margin-left: 10px;
         display: flex;
         align-items: center;
         text-align: center;
-        height: 60px;
-        width: 0px;
-    }
-
-    .pesquisarNome {
-        font-size: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .libary {
-        transform: translate(-50px, 0px);
-        height: 220px;
-        width: 700px;
-        margin-left: 85px;
-        position: absolute;
     }
 
     .homemaranha {
-        transform: translate();
-        height: 325px;
-        width: 700px;
-        margin-left: 20px;
-        transform: translate(20px, 250px);
+        max-height: 30vh;
+        min-height: 30vh;
+        max-width: 85vw;
+        min-width: 85vw;
+        top: 38%;
+        right: 7%;
+        position: absolute;
     }
 
     .raio {
-        height: 17px;
-        width: 103px;
-        margin-left: 50px;
+        max-height: 3vh;
+        min-height: 3vh;
+        max-width: 15vw;
+        min-width: 15vw;
+        margin-left: clamp(3rem, 2vw, 3rem);
     }
 
     .raio img {
-        height: 12px;
-        width: 12px;
+        max-height: 2vh;
+        min-height: 2vh;
+        max-width: 2vw;
+        min-width: 2vw;
     }
 
     .raio p {
-        font-size: 11px;
+        font-size: clamp(1rem, 1vw, 1rem);
     }
 
     .titulo {
-        font-size: 30px;
+        font-size: clamp(1.8rem, 2vw, 1.8rem);
         margin-top: 0px;
     }
 
     .subtitulo {
-        font-size: 14px;
-        margin-top: 10px;
+        font-size: clamp(0.8rem, 1vw, 0.8rem);
+        margin-top: clamp(0.5rem, 1vw, 0.5rem);
     }
 
     .book {
-        height: 36px;
-        width: 105px;
-        margin-left: 60px;
+        max-height: 2.5vh;
+        min-height: 2.5vh;
+        max-width: 15vw;
+        min-width: 15vw;
+        margin-left: clamp(3.5rem, 1vw, 1rem);
     }
 
     .book p {
-        font-size: 10px;
+        font-size: clamp(0.8rem, 1vw, 0.8rem);
     }
 
     .setas {
-        height: 31px;
-        width: 31px;
-        margin-top: 15px;
+        max-height: 3vh;
+        min-height: 3vh;
+        max-width: 3vw;
+        min-width: 3vw;
     }
 
     .carregando {
-        margin-left: 120px;
-        align-items: start;
-        justify-content: start;
-
+        margin-left: clamp(1rem, 1vw, 1rem);
     }
 
     .carregando img {
-        height: 42px;
-        width: 42px;
+        max-height: 3vh;
+        min-height: 3vh;
+        max-width: 3vw;
+        min-width: 3vw;
     }
 
     .carregando p {
-        font-size: 24px;
+        font-size: clamp(1rem, 1vw, 1rem);
     }
 
     .apex,
     .streetfighter {
-        margin-left: 40px;
-        height: 200px;
-        width: 310px;
+        margin-left: clamp(2.5rem, 1vw, 1rem);
+        max-height: 20vh;
+        min-height: 20vh;
+        max-width: 35vw;
+        min-width: 38vw;
     }
 
     .apex p,
     .streetfighter p {
-        font-size: 30px;
+        font-size: clamp(1.2rem, 1vw, 1rem);
         margin-top: 70px;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 480px) {
+
+    .ladingpage {
+        max-height: 11vh;
+        min-height: 50vh;
+        max-width: 93vw;
+        min-width: 93vw;
+    }
+
+    .libary,
+    .pesquisarNome,
+    .setas {
+        display: none;
+    }
+
+    .barra {
+        margin-left: 0px;
+        max-height: 7vh;
+        min-height: 7vh;
+        max-width: 30vw;
+        min-width: 30vw;
+    }
+
+    .pesquisar {
+        margin-top: 20px;
+        max-height: 11vh;
+        min-height: 11vh;
+        max-width: 93vw;
+        min-width: 93vw;
+    }
+
+    .sino {
+        max-height: 7vh;
+        min-height: 7vh;
+        max-width: 12vw;
+        min-width: 12vw;
+    }
+
+    .sino img {
+        max-height: 7vh;
+        min-height: 7vh;
+        max-width: 10vw;
+        min-width: 10vw;
+
+    }
+
+    .perfil {
+        max-height: 7vh;
+        min-height: 7vh;
+        max-width: 20vw;
+        min-width: 20vw;
+        gap: clamp(0.1rem, 1vw, 0.1rem);
+    }
+
+    .perfil img {
+        max-height: 5vh;
+        min-height: 5vh;
+        max-width: 5vw;
+        min-width: 5vw;
+        margin-left: clamp(1rem, 1vw, 1rem);
+    }
+
+    .engrenagem {
+        max-height: 7vh;
+        min-height: 7vh;
+        max-width: 12vw;
+        min-width: 12vw;
+    }
+
+    .engrenagem img {
+        max-height: 5vh;
+        min-height: 5vh;
+        max-width: 10vw;
+        min-width: 10vw;
+    }
+
+    .homemaranha {
+        max-height: 30vh;
+        min-height: 30vh;
+        max-width: 93vw;
+        min-width: 93vw;
+        margin-top: clamp(1.5rem, 1vw, 1.5rem);
+        transform: translate(20px, -160px);
+    }
+
+    .raio {
+        max-height: 4vh;
+        min-height: 4vh;
+        max-width: 25vw;
+        min-width: 25vw;
+    }
+
+    .raio img {
+        max-height: 3vh;
+        min-height: 3vh;
+        max-width: 5vw;
+        min-width: 5vw;
+    }
+
+    .raio p {
+        font-size: clamp(1rem, 1vw, 1rem);
+    }
+
+    .book {
+        margin-top: clamp(0.1rem, 3vw, 0.1rem);
+        margin-left: clamp(20rem, 3vw, 3rem);
+        max-height: 5vh;
+        min-height: 5vh;
+        max-width: 20vw;
+        min-width: 20vw;
+    }
+
+    .apex,
+    .streetfighter {
+        margin-top: clamp(1.5rem, 1vw, 1.5rem);
+        margin-left: clamp(1rem, 1vw, 1rem);
+        max-height: 30vh;
+        min-height: 30vh;
+        max-width: 35vw;
+        min-width: 38vw;
+    }
+
+    .apex p {
+        font-size: clamp(2rem, 1vw, 2rem);
+        margin-left: clamp(1rem, 3vw, 1rem);
+        margin-top: clamp(5rem, 3vw, 10rem);
+    }
+
+    .streetfighter p {
+        font-size: clamp(1.5rem, 1vw, 2rem);
+        margin-left: clamp(1rem, 3vw, 1rem);
+        margin-top: clamp(5rem, 3vw, 10rem);
+    }
+
+    footer {
+        margin-top: clamp(1.5rem, 1vw, 1.5rem);
+        margin-top: 20px;
+        max-height: 7vh;
+        min-height: 7vh;
+        max-width: 93vw;
+        min-width: 93vw;
+    }
+
+    .imgfooter img {
+        background-color: #54375B;
+        max-height: 5vh;
+        min-height: 5vh;
+        max-width: 5vw;
+        min-width: 5vw;
+    }
+
+    .imgfooter {
+        font-size: clamp(1rem, 1vw, 1rem);
+    }
+
+    .logout {
+        max-height: 5vh;
+        min-height: 5vh;
+        max-width: 25vw;
+        min-width: 25vw;
+        margin-top: clamp(0.5rem, 3vw, 0.2rem);
+        margin-left: clamp(0.75rem, 1vw, 1rem);
+        margin-right: clamp(0.75rem, 1vw, 1rem);
+        gap: clamp(0.1rem, 3vw, 1rem);
+        font-size: clamp(1rem, 3vw, 1rem);
+    }
+
+    .logout img {
+        max-height: 5vh;
+        min-height: 3vh;
+        max-width: 5vw;
+        min-width: 3vw;
+    }
+
+    .pequenasimagens {
+        gap: clamp(0.5rem, 1vw, 0.5rem);
+    }
+
+    .caixa,
+    .amigos,
+    .cartao {
+        max-height: 5%;
+        min-height: 5vh;
+        max-width: 7vw;
+        min-width: 7vw;
+        margin-top: clamp(0.5rem, 1vw, 0.5rem);
+    }
+
+    .caixa img,
+    .amigos img,
+    .cartao img {
+        max-height: 3vh;
+        min-height: 3vh;
+        max-width: 3vw;
+        min-width: 3vw;
+    }
+
+@media (max-width: 440px) {
+    .book{
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    .pequenasimagens, .apex p, .streetfighter p{
+        display: none;
+    }
+}
+
+@media (max-width: 250px) {
+    main{
+        display: none;
+    }
+}
+}
+
+@media (min-width: 250px) {
+    h1{
+        display: none;
     }
 }
